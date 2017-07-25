@@ -7,3 +7,12 @@
   tags:
     - 'role::network-manager-l2tp'
     - 'role::network-manager-l2tp::init'
+    - 'role::network-manager-l2tp::install'
+
+
+- name: 'INSTALL | Manage OS family installation tasks'
+  include: "{{ role_path }}/tasks/install_{{ ansible_os_family | lower }}.yml"
+  become: True
+  tags:
+    - 'role::network-manager-l2tp'
+    - 'role::network-manager-l2tp::install'
