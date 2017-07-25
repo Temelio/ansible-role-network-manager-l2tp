@@ -1,0 +1,9 @@
+---
+
+# Main tasks file for network-manager-l2tp role
+
+- name: 'INIT | Manage variables to use for our target'
+  include: "{{ role_path }}/tasks/manage_variables.yml"
+  tags:
+    - 'role::network-manager-l2tp'
+    - 'role::network-manager-l2tp::init'
