@@ -13,9 +13,6 @@ driver:
   name: 'docker'
 docker:
   containers:
-    - name: 'network-manager-l2tp-docker-jessie'
-      image: 'debian'
-      image_version: 'jessie'
     - name: 'network-manager-l2tp-docker-trusty'
       image: 'ubuntu'
       image_version: 'trusty'
@@ -30,9 +27,6 @@ molecule:
     - '.vagrant'
 vagrant:
   platforms:
-    - name: 'jessie64'
-      box: 'debian/jessie64'
-      linked_clone: True
     - name: 'trusty64'
       box: 'ubuntu/trusty64'
       linked_clone: True
