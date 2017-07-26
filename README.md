@@ -44,6 +44,35 @@ $ MOLECULE_DRIVER=vagrant tox
 ### Default role variables
 
 ``` yaml
+# Installation mode
+nm_l2tp_install_from_repository: "{{ _nm_l2tp_install_from_repository }}"
+
+# Repository management
+nm_l2tp_apt_cache_valid_time: 3600
+nm_l2tp_repositories: "{{ _nm_l2tp_repositories }}"
+
+# Packages
+nm_l2tp_packages: "{{ _nm_l2tp_packages }}"
+nm_l2tp_system_dependencies: "{{ _nm_l2tp_system_dependencies }}"
+```
+
+### Ubuntu distributions variables
+
+``` yaml
+# Installation mode
+_nm_l2tp_install_from_repository: True
+
+# Repository management
+_nm_l2tp_repositories:
+  - repo: 'ppa:nm-l2tp/network-manager-l2tp'
+    filename: 'network-manager-l2tp'
+
+# Packages
+_nm_l2tp_packages:
+  - name: 'network-manager-l2tp'
+  - name: 'network-manager-l2tp-gnome'
+_nm_l2tp_system_dependencies:
+  - name: 'ca-certificates'
 ```
 
 ## Dependencies
