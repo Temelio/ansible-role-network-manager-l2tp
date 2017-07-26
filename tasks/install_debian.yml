@@ -1,0 +1,30 @@
+---
+
+# Install tasks for Debian OS family
+#------------------------------------------------------------------------------
+
+- name: 'INSTALL | APT | Install system dependencies'
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    update_cache: True
+    cache_valid_time: "{{ nm_l2tp_apt_cache_valid_time }}"
+  with_items: "{{ nm_l2tp_system_dependencies }}"
+
+
+- name: 'INSTALL | APT | Configure repository'
+  apt_repository:
+    repo: "{{ item.repo }}"
+    filename: "{{ item.filename }}"
+    mode: "{{ item.mode | default('0644') }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: "{{ nm_l2tp_repositories }}"
+
+
+- name: 'INSTALL | APT | Install packages'
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    update_cache: True
+    cache_valid_time: "{{ nm_l2tp_apt_cache_valid_time }}"
+  with_items: "{{ nm_l2tp_packages }}"
