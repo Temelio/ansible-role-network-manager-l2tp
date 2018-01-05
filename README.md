@@ -1,6 +1,10 @@
 # network-manager-l2tp
 
-[![Build Status](https://travis-ci.org/Temelio/ansible-role-network-manager-l2tp.svg?branch=master)](https://travis-ci.org/Temelio/ansible-role-network-manager-l2tp)
+[![Build Status](https://img.shields.io/travis/Temelio/ansible-role-network-manager-l2tp/master.svg?label=travis_master)](https://travis-ci.org/Temelio/ansible-role-network-manager-l2tp)
+[![Build Status](https://img.shields.io/travis/Temelio/ansible-role-network-manager-l2tp/develop.svg?label=travis_develop)](https://travis-ci.org/Temelio/ansible-role-network-manager-l2tp)
+[![Updates](https://pyup.io/repos/github/Temelio/ansible-role-network-manager-l2tp/shield.svg)](https://pyup.io/repos/github/Temelio/ansible-role-network-manager-l2tp/)
+[![Python 3](https://pyup.io/repos/github/Temelio/ansible-role-network-manager-l2tp/python-3-shield.svg)](https://pyup.io/repos/github/Temelio/ansible-role-network-manager-l2tp/)
+[![Ansible Role](https://img.shields.io/ansible/role/19509.svg)](https://galaxy.ansible.com/Temelio/network-manager-l2tp/)
 
 Install network-manager-l2tp package.
 
