@@ -5,7 +5,7 @@ galaxy_info:
   description: 'Ansible role to enable L2TP over IPSec support for network-manager'
   company: 'Temelio (http://www.temelio.com)'
   license: 'MIT'
-  min_ansible_version: '2.1'
+  min_ansible_version: '2.2'
   github_branch: 'master'
   platforms:
     - name: 'Ubuntu'
@@ -13,7 +13,7 @@ galaxy_info:
         - 'trusty'
         - 'xenial'
   galaxy_tags:
-    - 'system'
-    - 'network'
     - 'desktop'
+    - 'network'
+    - 'system'
 dependencies: []
