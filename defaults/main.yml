@@ -1,7 +1,7 @@
 ---
 
 # Defaults vars file for network-manager-l2tp role
-#------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
 # Installation mode
 nm_l2tp_install_from_repository: "{{ _nm_l2tp_install_from_repository }}"
